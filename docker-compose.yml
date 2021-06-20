@@ -38,8 +38,8 @@ services:
     
 volumes:
   mongodb:
-    #external: true
+    external: true
     
 networks:
   customoverlay:
-    #external: true
+    external: true
