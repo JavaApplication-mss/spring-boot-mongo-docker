@@ -14,7 +14,7 @@ kind: ReplicationController
 metadata:
   name: spring-controller
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     app: springboot
   template:
@@ -23,7 +23,7 @@ spec:
         app: springboot
     spec:
       containers:
-      - image: dockerhandson/spring-boot-mongo
+      - image: dhanu353/spring-boot-mongo
         name: springboot
         ports:
         - containerPort: 8080  
